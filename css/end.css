@@ -1,0 +1,15 @@
+.end .flexbox {
+	align-items: normal;
+}
+
+.end a {
+	font-family: 'Japanese';
+	mmargin-top: 15px;
+    margin-right: 45px;
+    color: black;
+    letter-spacing:2px;
+}
+
+.end a:last-child {
+	margin-right: 0;
+}

@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+  font-family: 'Japanese';
+  font-kerning: 60px;
+  letter-spacing: 60px;
+  src: url('../fonts/Japanese.eot'); 
+  src: url('../fonts/Japanese.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Japanese.woff2') format('woff2'),
+       url('../fonts/Japanese.woff') format('woff'),
+       url('../fonts/Japanese.ttf')  format('truetype'),
+       url('../fonts/Japanese.svg#Japanese') format('svg');
+}
+
+.Japanese{
+  font-kerning: 60px;
+  letter-spacing: 60px;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+  text-transform:none;
+}
+
+nav, .logo {
+  font-family: Japanese, sans-serif;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Japanese, sans-serif;
+  color: #E92222;
+  margin-bottom: .25em;
+  letter-spacing: 2px;
+  
+}
+
+h1 { font-size: 6rem; line-height:80%; }
+h2 { font-size: 2rem; }
+
+p {
+  max-width: 650px;
+  line-height: 150%;
+  /*text-align: justify;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-aspect-ratio:1/1) and (max-width:680px) {
+
+  h1 { font-size: 4rem; }
+}

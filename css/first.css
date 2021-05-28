@@ -1,0 +1,65 @@
+
+ul {
+	list-style: none;
+}
+
+div > img {
+	display: block;
+	width:100%;
+}
+
+/*common style*/
+
+.first-view {
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.first-view .container {
+	display: flex;
+	align-items: flex-start;
+	align-content: flex-start;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 10vh;
+}
+
+.title-container {
+	margin-top: 24vh;
+	text-transform: capitalize;
+}
+
+.title {
+	margin-bottom: .2em;
+}
+
+.under-title {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+/*title*/
+
+.mount-fuji {
+	position: absolute;
+	right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-aspect-ratio:16/11) {
+	.mount-fuji img {		
+    	width:150%;
+    	margin-left:-30%;
+	}	
+}
+
+@media screen and (max-aspect-ratio:1/1) {
+	.mount-fuji img {		
+    	width:220%;
+    	margin-left:-80%;
+	}	
+}

@@ -1,0 +1,107 @@
+.sun1.anim {
+	position: fixed;
+	width: 100%;
+    right:0;
+    top: 20%;
+    z-index:-1; 
+}
+
+.sun .img-box {
+	max-width: 1144px;
+	padding: 0 30px;
+	margin: auto;
+}
+
+.sun img {
+	max-width: 6.5rem;
+	margin-left: auto;
+}
+
+#s1, #s5 {
+	position: relative;
+}
+
+.sun {
+	position: absolute;
+	width: 100%;
+    right:0;
+    top: 27%;
+    z-index:-1;
+    opacity:0; 
+}
+
+.sun2 {
+    right:6%; 
+}
+
+.sun3 {
+    right:8%;
+    top: 28%; 
+}
+
+.sun1, .sun2, .sun3, {
+	opacity:0; 
+}
+
+.sun.anim {
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-delay:.35s;
+	animation-timing-function: ease;
+}
+
+.sun1.anim { 
+	animation-name: sun1;
+	animation-duration: 1.5s;
+}
+
+.sun2.anim {
+	animation-name: sun2;
+	animation-duration: 1.5s;
+}
+
+.sun3.anim { 
+	animation-name: sun3;
+}
+
+@keyframes sun1 {
+	0%{
+		opacity:0.1;
+		transform: translate(-18%, -150%) scale(1.5);
+	}
+	100%{
+		opacity:1;
+		transform: none;
+	}
+}
+
+@keyframes sun2 {
+	0%{
+		opacity:0.1;
+		transform: translate(-18%, -150%) scale(1.5);
+	}
+	100%{
+		opacity:1;
+		transform: none;
+	}
+}
+
+@keyframes sun3 {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@media screen and (max-aspect-ratio:1/1) {
+
+	.sun {
+		top:22%;
+	}
+
+	.sun img {
+		max-width: 14vw;
+	}	
+}

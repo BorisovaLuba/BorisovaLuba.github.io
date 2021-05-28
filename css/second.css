@@ -1,0 +1,37 @@
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+}
+
+.coltxt {
+	width:55%;
+	padding-right: 30px;
+}
+
+.colimg {
+	width:35%;
+}
+
+.colimg img {
+	max-height: 300px;
+	width: auto;
+	margin: auto;
+}
+
+@media screen and (max-width: 680px) {
+	.colimg {
+		width:95%;
+	}
+
+	.coltxt {
+		width:90%;
+	}
+
+	.colimg img {
+		max-height: 300px;
+		width: 100%;
+	}
+}
